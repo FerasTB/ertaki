@@ -1,0 +1,11 @@
+.main-list ul li {
+    border-right: 10px solid #000;
+}
+
+.main-list ul li:last-of-type {
+    border-right: none;
+}
+
+.main-list ul ul li {
+    border-right: none;
+}

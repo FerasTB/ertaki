@@ -1,0 +1,86 @@
+:root {
+    --lightBlue: #b6666f;
+    --mainWhite: #f3f3f3;
+    --mainDark: #fef2f2;
+}
+
+section {
+    margin-top: 100px;
+    margin-bottom: 100px;
+}
+
+.active {
+    border-bottom: solid var(--lightBlue);
+}
+
+.header {
+    background-image: url(./img/headerr.jpg);
+    height: 500px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.header h1 {
+    color: white;
+    font-size: 60px;
+    padding-top: 100px !important;
+}
+
+.section1 p,
+h2,
+.section3 p,
+h3 {
+    color: #5b6670;
+}
+
+.section1 img {
+    width: 150px;
+    height: 150px;
+}
+
+.section3 img {
+    width: 100px;
+    height: 100px;
+}
+
+.section1 h1 {
+    color: var(--lightBlue);
+}
+
+.section2 h1,
+.section4 h1 {
+    font-size: 48px;
+}
+
+.section2 p,
+.section4 p {
+    font-size: 28px;
+    font-weight: 300;
+}
+
+.carsec4 {
+    height: 400px;
+}
+
+.section2,
+.section4 {
+    background-color: var(--mainDark);
+}
+
+.footer {
+    background-color: #222d32 !important;
+    color: aliceblue;
+}
+
+.footer i {
+    color: var(--lightBlue);
+}
+
+.loading {
+    background-color: #e4c2c1;
+}
+
+.login {
+    background-color: var(--mainDark);
+}
