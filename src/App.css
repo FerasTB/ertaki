@@ -27,6 +27,29 @@ section {
     padding-top: 100px !important;
 }
 
+#mobileHeaderButton {
+    display: none;
+}
+
+#mobileButton {
+    display: none;
+}
+
+@media only screen and (max-width: 450px) {
+    body {
+        width: 100%;
+    }
+    .header h1 {
+        font-size: 40px;
+    }
+    #mobileHeaderButton {
+        display: block;
+    }
+    #mobileButton {
+        display: block;
+    }
+}
+
 .section1 p,
 h2,
 .section3 p,
@@ -51,6 +74,14 @@ h3 {
 .section2 h1,
 .section4 h1 {
     font-size: 48px;
+}
+
+@media only screen and (max-width: 450px) {
+    .section2 h1,
+    .section4 h1,
+    .section3 h1 {
+        font-size: 35px;
+    }
 }
 
 .section2 p,
@@ -82,5 +113,18 @@ h3 {
 }
 
 .login {
-    background-color: var(--mainDark);
+    background-image: url(./img/login2.svg);
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+@media only screen and (max-width: 450px) {
+    .login {
+        background-position: 0px 220px;
+        height: 600px;
+    }
+    .login h1 {
+        font-size: 30px;
+        text-align: right;
+    }
 }

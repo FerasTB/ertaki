@@ -34,7 +34,7 @@ function LoginForm() {
             {(formik) => {
               return (
                 <div className="container d-flex justify-content-center login ">
-                    <form action="">
+                    <form action="" className="ml-auto">
                       <h1 className="m-3">
                       {console.log(value.isLogin)}
                         {value.isLogin ? "تسجيل دخول" : "إنشاء حساب"}

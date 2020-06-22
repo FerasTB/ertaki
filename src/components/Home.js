@@ -2,14 +2,17 @@ import React, { Component } from "react";
 import ReactPlayer from "react-player";
 import user from "./../img/users.png";
 import couriers from "./../img/orders-annually.png";
-import driver from "./../img/driver.svg";
-import app from "./../img/tryapp.svg";
-import bussnis from "./../img/bussnis.svg";
+import quizz from "./../img/quizes.png";
+import productivity from "./../img/productivity.png";
+import moreUnderstanding from "./../img/more-understanding.png";
+import interactiveLessons from "./../img/interactive-lessons.png";
+import helping from "./../img/helping.png"
+import moreTime from "./../img/more-time.png"
 import car from "./../img/car.png";
 import CountUp from "react-countup";
 import TypeIt from "typeit-react";
 import { Link } from "react-router-dom";
-import { ButtonContainer } from "./Layout/Button";
+import { ButtonContainer,ButtonMobileContainer } from "./Layout/Button";
 import deliveryman from "./../img/deliveryman.png";
 import store from "./../img/store.png";
 import ReactWOW from "react-wow";
@@ -20,14 +23,24 @@ export default class Home extends Component {
     return (
       <div className="">
         <header className="header">
-          <p className="mr-5 float-right">
-            {" "}
-            <TypeIt element={"h1"} className="site-title">
-              نعمل سويا لكي تصل إلى <br />
-              مرادك وتحقق أهدافك
-            </TypeIt>
-          </p>
+          <div>
+            <p className="ml-5 float-right text-right">
+              
+              <TypeIt element={"h1"} className="site-title  text-success">
+                نعمل سويا لكي تصل إلى <br />
+                مرادك وتحقق أهدافك
+              </TypeIt>
+              {" "}
+            </p>
+          </div>
+          <div className="d-block ">
+            <ButtonMobileContainer id="mobileHeaderButton" className="mt-2">
+              ابدأ الان
+            </ButtonMobileContainer>
+          </div>
+          
         </header>
+        
         <section className="section1">
           <div className="container text-center">
             <div className="row">
@@ -53,10 +66,18 @@ export default class Home extends Component {
               <div className="col-md-12 mt-5 ">
                 <div className="container">
                 <section className="section3 mt-5 text-center">
-          <h1>لماذا تستخدم ارتقِ؟</h1>
+          <h1 >لماذا تستخدم ارتقِ؟</h1>
 
-          <div className="container">
+          <div className="container mt-4">
             <div className="row">
+            <div className="col-md-4">
+                <div class="">
+                  <img
+                    className="card-img-top"
+                    src={moreTime}
+                    alt="Card image cap"
+                  />
+                </div>
                   <div className="card-body">
                     <h3 className="card-text">وقت اضافي</h3>
                     <p className="card-text">
@@ -64,16 +85,16 @@ export default class Home extends Component {
                       لتستغله بامر اخر
                     </p>
                   </div>
-              <div className="col-md-4">
-                <div class="">
+              
+              </div>
+              <div className="col-md-4 ">
+              <div class="">
                   <img
-                    className="card-img-top"
-                    src={driver}
+                    className="card-img-bottom"
+                    src={moreUnderstanding}
                     alt="Card image cap"
                   />
                 </div>
-              </div>
-              <div className="col-md-4 ">
                   <div className="card-body">
                     <h3 className="card-text">فهم اعمق</h3>
                     <p className="card-text">
@@ -81,16 +102,17 @@ export default class Home extends Component {
                       لك الفهم الكامل للمنهاج
                     </p>
                   </div>
-                  <div class="">
-                  <img
-                    className="card-img-bottom"
-                    src={bussnis}
-                    alt="Card image cap"
-                  />
-                </div>
+                  
               </div>
 
               <div className="col-md-4">
+              <div class="">
+                  <img
+                    className="card-img-bottom"
+                    src={productivity}
+                    alt="Card image cap"
+                  />
+                </div>
                   <div className="card-body">
                     <h3 className="card-text">انتاجية اكير</h3>
                     <p className="card-text">
@@ -98,13 +120,7 @@ export default class Home extends Component {
                       و هي بانتظارك لتدرسها<br/> باي وقت {" "}
                     </p>
                   </div>
-                  <div class="">
-                  <img
-                    className="card-img-bottom"
-                    src={app}
-                    alt="Card image cap"
-                  />
-                </div>
+                  
               </div>
             </div>
           </div>
@@ -121,7 +137,7 @@ export default class Home extends Component {
             </div>
             <div className="col-md-6 text-right">
               {" "}
-              <h1 className=" pr-5">سجل معنا كطالب</h1>
+              <h1 className=" pr-5 ">سجل معنا كطالب</h1>
               <p className="mt-3 pr-5">
                 يقدم لك ارتقِ شرح مبسط لجميع المواد العلمية باستخدام الصور
                 <br /> وبطريقة حديثة وسلسة تمكنك من فهم المادة واجراء اخبار
@@ -142,7 +158,7 @@ export default class Home extends Component {
                 <div class="">
                   <img
                     className="card-img-top"
-                    src={driver}
+                    src={interactiveLessons}
                     alt="Card image cap"
                   />
 
@@ -160,7 +176,7 @@ export default class Home extends Component {
                 <div class="">
                   <img
                     className="card-img-top"
-                    src={bussnis}
+                    src={helping}
                     alt="Card image cap"
                   />
                   <div className="card-body">
@@ -177,7 +193,7 @@ export default class Home extends Component {
                 <div class="">
                   <img
                     className="card-img-top"
-                    src={app}
+                    src={quizz}
                     alt="Card image cap"
                   />
                   <div className="card-body">
@@ -188,7 +204,7 @@ export default class Home extends Component {
                     </p>
                   </div>
                 </div>
-                <ButtonContainer className="m-5">
+                <ButtonContainer className="m-auto mt-2" id="mobileButton">
                 <span className="mr-2">ابدأ التعلم</span>
               </ButtonContainer>
               </div>

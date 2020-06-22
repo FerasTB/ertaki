@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import { Link, NavLink } from "react-router-dom";
 import styled from "styled-components";
-import { ButtonContainer } from "./Button";
+import { ButtonContainer , ButtonMobileContainer} from "./Button";
 export default class Navbar extends Component {
   render() {
     return (
@@ -9,17 +9,17 @@ export default class Navbar extends Component {
         <NavLink
           to="/login"
           activeClassName="active"
-          className="ml-auto wow backInUp"
+          className="mr-auto wow backInUp"
         >
-          <ButtonContainer>
-            <span className="mr-2">
+          <ButtonMobileContainer className="ml-2">
+            <span className="">
               سجل دخول <i class="	fas fa-user-graduate"></i>
             </span>
-          </ButtonContainer>
+          </ButtonMobileContainer>
         </NavLink>
 
         <button
-          className="navbar-toggler toggler-example purple darken-3"
+          className="navbar-toggler toggler-example purple darken-3 mr-2"
           type="button"
           data-toggle="collapse"
           data-target="#navbarMenue"
@@ -72,7 +72,7 @@ export default class Navbar extends Component {
         <NavLink
           className="navbar-brand wow flash"
           activeClassName="active"
-          to="/u"
+          to="/"
         >
           ارت<span className="text-danger">قِ</span>
         </NavLink>
